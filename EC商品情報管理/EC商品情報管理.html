@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>EC商品情報管理</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- 顶部区域 -->
+    <header>
+        <div class="logo">
+            <img src="./images/公司.png" alt="logo">
+            <span>EC|CUBE</span>
+        </div>
+        <div class="title">
+            <span>Joolen EC-CUBEデモサイト</span>
+        </div>
+        <div class="user">
+            <span>管理者様</span>
+            <div class="dropdown">▼</div> 
+        </div>
+    </header>
+
+    <!-- 主体区域 -->
+    <main>
+        <!-- 左边菜单区域 -->
+        <aside>
+            <ul style="list-style-type:none;">
+                <li class="menu-item">
+                    <a href="#" class="menu-link">ホーム</a>
+                    <ul class="submenu">
+                        <li><a href="#">子菜单 1-1</a></li>
+                        <li><a href="#">子菜单 1-2</a></li>
+                        <li><a href="#">子菜单 1-3</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="menu-link">商品管理</a>
+                    <ul class="submenu">
+                        <li><a href="#" class="submenu-link" data-content="goodsList">商品一覧</a></li>
+                        <li><a href="#" class="submenu-link" data-content="goodsLogin">商品登録</a></li>
+                        <li><a href="#" class="submenu-link" data-content="paramManage">規格管理</a></li>
+                        <li><a href="#" class="submenu-link" data-content="categoryManage">カテゴリ管理</a></li>
+                        <li><a href="#" class="submenu-link" data-content="tagManage">タグ管理</a></li>
+                        <li><a href="#" class="submenu-link" data-content="goodsCSVLogin">商品CSV登録</a></li>
+                        <li><a href="#" class="submenu-link" data-content="categoryCSVLogin">カテゴリCSV登録</a></li>
+                        <li><a href="#" class="submenu-link" data-content="downloadGoodsCSVLogin">>ダウンロード商品CSV登録</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="menu-link">受注管理</a>
+                    <ul class="submenu">
+                        <li><a href="#">子菜单 2-1</a></li>
+                        <li><a href="#">子菜单 2-2</a></li>
+                        <li><a href="#">子菜单 2-3</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="menu-link">会員管理</a>
+                    <ul class="submenu">
+                        <li><a href="#">子菜单 2-1</a></li>
+                        <li><a href="#">子菜单 2-2</a></li>
+                        <li><a href="#">子菜单 2-3</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="menu-link">コンテンツ管理</a>
+                    <ul class="submenu">
+                        <li><a href="#">子菜单 2-1</a></li>
+                        <li><a href="#">子菜单 2-2</a></li>
+                        <li><a href="#">子菜单 2-3</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="menu-link">設定</a>
+                    <ul class="submenu">
+                        <li><a href="#">子菜单 2-1</a></li>
+                        <li><a href="#">子菜单 2-2</a></li>
+                        <li><a href="#">子菜单 2-3</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="menu-link">オーナーズストア</a>
+                    <ul class="submenu">
+                        <li><a href="#">子菜单 2-1</a></li>
+                        <li><a href="#">子菜单 2-2</a></li>
+                        <li><a href="#">子菜单 2-3</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="menu-link">情報</a>
+                    <ul class="submenu">
+                        <li><a href="#">子菜单 2-1</a></li>
+                        <li><a href="#">子菜单 2-2</a></li>
+                        <li><a href="#">子菜单 2-3</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+        </aside>
+
+<!-- 右边内容区域 -->
+        <section id="content-area">
+            <div id="goodsList" class="content-item">
+                <!-- 头部区域 -->
+                <div id="head" style="background-color: white;margin-bottom: 20px;padding: 5px;">
+                    <span style="font-size: larger;"><b>商品一覧</b></span> <span><b>商品管理</b></span></h3>
+                </div>
+
+                <!-- 搜索框区域 -->
+                <div id="searchBar">
+                    <div>
+                        <span>商品名・商品ID・商品コード</span><img src="./images/问号.png" alt="问号" style="width: 18px; height: 18px;">
+                    </div>
+                    <div id="searchInput" style="margin: 10px 0px;">
+                        <input type="text" name="search" style="width: 500px;"><br>
+                        <img src="./images/加号.png" alt="加号" style="width: 18px; height: 18px; margin-top: 5px;">
+                        <span><b>詳細検索</b></span>
+                    </div>
+                    <button type="button">検索</button>
+                    <span style="margin-left: 10px;"><b>検索結果：</b>23件が該当しました</span><br>
+                    <div style="margin-top: 30px;">
+                        <span><b>公開ステータス：</b>公開，非公開</span>
+                    </div>
+                </div>
+
+                <!-- 表格区域 -->
+                <div id="table">
+                    <div style="text-align: right;margin: 10px;">
+                        <span style="border: solid 1px #ccc;padding: 5px;">50件</span>
+                        <span style="border: solid 1px #0e0e0e;padding: 5px;">表示項目</span>
+                        <span style="border: solid 1px #0e0e0e;padding: 5px;">CSVダウンロード</span>
+                        <span style="border: solid 1px #0e0e0e;padding: 5px;">CSV出力項目設定</span>
+                    </div>
+                    <div class="tableContent">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th><input type="checkbox"></th>
+                                    <th>商品名</th>
+                                    <th>価格</th>
+                                    <th>在庫数</th>
+                                    <th>公開状態</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>テスト商品1</td>
+                                    <td>1000円</td>
+                                    <td>無制限</td>
+                                    <td>公開</td>
+                                    <td><img src="./images/眼睛.png"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>テスト商品2</td>
+                                    <td>2000円</td>
+                                    <td>無制限</td>
+                                    <td>公開</td>
+                                    <td><img src="./images/眼睛.png"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>テスト商品3</td>
+                                    <td>3000円</td>
+                                    <td>無制限</td>
+                                    <td>公開</td>
+                                    <td><img src="./images/眼睛.png"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>テスト商品4</td>
+                                    <td>4000円</td>                        
+                                    <td>無制限</td>
+                                    <td>公開</td>
+                                    <td><img src="./images/眼睛.png"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>テスト商品5</td>
+                                    <td>5000円</td>                        
+                                    <td>無制限</td>
+                                    <td>公開</td>
+                                    <td><img src="./images/眼睛.png"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>テスト商品6</td>
+                                    <td>6000円</td>                        
+                                    <td>無制限</td>
+                                    <td>公開</td>          
+                                    <td><img src="./images/眼睛.png"></td>          
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>テスト商品7</td>
+                                    <td>7000円</td>                        
+                                    <td>無制限</td>
+                                    <td>公開</td>    
+                                    <td><img src="./images/眼睛.png"></td>                
+                                </tr>          
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div id="goodsLogin" class="content-item">
+                商品登録
+            </div>
+            <div id="paramManage" class="content-item">
+                規格管理
+            </div>
+            <div id="categoryManage" class="content-item">
+                カテゴリ管理
+            </div>
+            <div id="tagManage" class="content-item">
+                タグ管理
+            </div>
+            <div id="goodsCSVLogin" class="content-item">
+                商品CSV登録
+            </div>
+            <div id="categoryCSVLogin" class="content-item">
+                カテゴリCSV登録
+            </div>
+            <div id="downloadGoodsCSVLogin" class="content-item">
+                ダウンロード商品CSV登録
+            </div>
+    </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

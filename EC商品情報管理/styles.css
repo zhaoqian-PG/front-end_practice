@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+ 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #343a40;
+    color: white;
+    height: 20px;
+    padding: 1em 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-between; /* 元素均匀分布 */
+    /* justify-content: center;
+    align-items: center; */
+}
+header .logo{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+header img{
+    width: 25px; /* Logo图标宽度 */
+    height: 25px; /* Logo图标高度 */
+    margin-right: 10px; /* Logo与文本之间的间距 */
+}
+header .title{
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: -700px;
+}
+header .user{
+    display: flex;
+    align-items: center;
+}
+header .user span {
+    margin-right: 10px; /* 用户名与下拉箭头之间的间距 */
+}
+header .user-info .dropdown {
+    cursor: pointer; /* 鼠标指针为手形 */
+}
+
+
+aside {
+    width:200px;
+    border-right: solid lightgrey;
+    min-height: 500px;
+    position: fixed;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+section {
+    margin-left: 210px;
+    bottom: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+ul li a {
+    color:#343a40;
+    text-decoration: none;
+}
+
+.menu-item {
+    margin-bottom: 10px;
+}
+.menu-link {
+    display: block;
+    padding: 8px;
+    background-color: whitesmoke;
+    color:rgb(56, 53, 53);
+    text-decoration: none;
+    border: 1px solid #b8bfc7;
+    border-collapse: collapse;
+    margin-bottom: -10px;
+}
+.submenu {
+    display: none;
+    list-style-type: none;
+    padding-left: 10px;
+    margin-top: 5px;
+}
+.menu-item:hover .submenu {
+    display: block;
+}
+.menu-item:hover .menu-link {
+    background-color: #5f6d7b;
+}
+.submenu a {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+}
+
+/* 控制右侧内容页面的显示和隐藏 */
+.content-item {
+    display: none;
+}
+.content-item.active {
+    display: block;
+}
+
+/* 商品一览页面样式 */
+#content-area button{
+    background-color: rgb(111, 126, 239);
+    width: 100px;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+}
+.tableContent{
+    width: 100%;
+    border-collapse: collapse;
+}
+.tableContent th, .tableContent td{
+    width: 400px;
+    border: 1px solid #2c2727;
+    padding: 3px;
+    text-align: center;
+}
+.tableContent img{
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+}

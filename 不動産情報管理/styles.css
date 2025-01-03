@@ -1,0 +1,169 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0efef;
+}
+
+.container {
+    width: 100%; 
+    /* margin: 0 auto; 设置元素在容器中居中 */
+    overflow: hidden; /* 自动找高，防止内容溢出 */
+    /* display: flex; 使元素成为一个 flex 容器 */
+}
+
+.header {
+    width: 100%;
+    height: 35px;
+    background-color: #333;
+    color: #fff;
+    font-size: 17px;
+    line-height: 35px;
+    position: fixed;
+}
+
+.header img {
+    width: 26px;
+    height: 26px;
+    margin-left: 10px;
+}
+
+.menu {
+    width: 200px;
+    height: 100%;
+    background-color: #333;
+    color: #fff;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: fixed;
+    top: 35px;
+    left: 0;
+}
+
+.menu ul {
+    list-style: none;
+    margin-left: 5px;
+}
+ 
+.menu li {
+    margin-bottom: 10px;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.submenu {
+    display: none;
+    list-style: none;
+}
+
+.menu-item:hover {
+    background-color: rgb(50, 131, 192);
+}
+
+.menu-item:hover >.submenu {
+    display: block;
+    background-color:gray;
+    margin-left: -50px;
+}
+
+.content {
+    float: left;
+    margin-left: 200px;
+    height: 100%;
+    padding: 35px;
+}
+
+.content-item {
+    display: none;
+}
+
+.content-item.active {
+    display: block;
+}
+
+.user-form {
+    margin-top: 20px;
+}
+
+.user-form label {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-right: 140px;
+}
+
+.user-form input {
+    width: 500px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.user-form button {
+    margin-top: 20px;
+    background-color: rgb(50, 131, 192);
+    color: #fff;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 3px;
+    font-size: 15px;
+}
+
+.user-form button:hover {
+    background-color: rgb(35, 106, 163);
+}
+
+#user-list {
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.table-wrapper {
+    position: relative;
+    height: 450px;
+}
+
+.table-wrapper .table-head {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.table-wrapper .table-body {
+    display: block;
+    min-height: 400px;
+}
+
+.table-wrapper th, .table-wrapper td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.company-info {
+    margin-left: 200px;
+    margin-top: -5px;
+}
+
+.company-info label {
+    font-size: 15px;
+    margin-bottom: 5px;
+    margin-right: 30px;
+}
+
+.company-info input {
+    width: 300px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 15px;
+    margin-bottom: 20px;
+}

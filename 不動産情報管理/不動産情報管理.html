@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>不動産情報管理</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- 最外层容器 -->
+    <div class="container">
+    <!-- 顶部区域 -->
+        <div class="header">
+            <img src="./images/logo.png" alt="logo">
+            <span>サンブル不動産</span>
+            <img src="./images/加号.png" alt="加号">
+            <span>新規</span>
+        </div>
+
+    <!-- 左侧菜单区域 -->
+        <div class="menu">
+            <ul>
+                <li><a href="#">ダッシュボード</a></li>
+                <li><a href="#">Jetpack</a></li>
+                <li><a href="#">投稿</a></li>
+                <li><a href="#">物件</a></li>
+                <li><a href="#">メディア</a></li>
+                <li><a href="#">固定ページ</a></li>
+                <li><a href="#">コメント</a></li>
+                <li><a href="#">お問い合わせ</a></li>
+                <li><a href="#">外観</a></li>
+                <li><a href="#">ブラグイン</a></li>
+                <li class="menu-item"><a href="#">ユーザー</a>
+                    <ul class="submenu">
+                        <li><a href="#" class="submenu-link" data-content="user-list">ユーザー一覧</a></li>
+                        <li><a href="#" class="submenu-link" data-content="new-user">新規追加</a></li>
+                        <li><a href="#" class="submenu-link" data-content="your-profile">あなたのブロフォール</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">ツール</a></li>
+                <li><a href="#">設定</a></li>
+                <li><a href="#">F-TweetOldPost</a></li>
+                <li><a href="#">携帯表示</a></li>
+            </ul>
+        </div>
+
+    <!-- 右侧内容区域 -->
+        <div class="content">
+            <!-- 用户一览 -->
+            <div id="user-list" class="content-item">
+                <div class="table-wrapper">
+                    <table>
+                        <thead class="table-head">
+                            <tr>
+                                <th><input type="checkbox"></th>
+                                <th>ユーザー名</th>
+                                <th>名前</th> 
+                                <th>メールアドレス</th>
+                                <th>権限グループ</th>
+                                <th>投稿</th>
+                                <th>物件</th>
+                                <th>最終ログイン「数」</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table-body">
+                            <tr>
+                                <th><input type="checkbox"></th>
+                                <td>ユーザー1</td>
+                                <td>ユーザー1 太郎</td>
+                                <td>user1@example.com</td>
+                                <td>物件管理者</td>
+                                <td>10</td>
+                                <td>5</td>
+                                <td>2021/01/01 12:00:00</td>
+                            </tr>
+                            <tr>
+                                <th><input type="checkbox"></th>
+                                <td>ユーザー2</td>
+                                <td>ユーザー2 花子</td>
+                                <td>user2@example.com</td>
+                                <td>購読者</td>
+                                <td>5</td>
+                                <td>2</td>
+                                <td>2021/01/01 12:00:00</td>
+                            </tr>
+                            <tr>
+                                <th><input type="checkbox"></th>
+                                <td>ユーザー3</td>
+                                <td>ユーザー3 三郎</td>
+                                <td>user3@example.com</td>
+                                <td>購読者</td>
+                                <td>20</td>
+                                <td>10</td>
+                                <td>2021/01/01 12:00:00</td>
+                            </tr>
+                            <tr>
+                                <th><input type="checkbox"></th>
+                                <td>ユーザー4</td>
+                                <td>ユーザー4 楓</td>
+                                <td>user4@example.com</td>
+                                <td>購読者</td>
+                                <td>15</td>
+                                <td>7</td>
+                                <td>2021/01/01 12:00:00</td>
+                            </tr>
+                            <tr>
+                                <th><input type="checkbox"></th>
+                                <td>ユーザー4</td>
+                                <td>ユーザー4 楓</td>
+                                <td>user4@example.com</td>
+                                <td>購読者</td>
+                                <td>15</td>
+                                <td>7</td>
+                                <td>2021/01/01 12:00:00</td>
+                            </tr>
+                            <tr>
+                                <th><input type="checkbox"></th>
+                                <td>ユーザー4</td>
+                                <td>ユーザー4 楓</td>
+                                <td>user4@example.com</td>
+                                <td>購読者</td>
+                                <td>15</td>
+                                <td>7</td>
+                                <td>2021/01/01 12:00:00</td>
+                            </tr>
+                            <tr>
+                                <th><input type="checkbox"></th>
+                                <td>ユーザー4</td>
+                                <td>ユーザー4 楓</td>
+                                <td>user4@example.com</td>
+                                <td>購読者</td>
+                                <td>15</td>
+                                <td>7</td>
+                                <td>2021/01/01 12:00:00</td>
+                            </tr>
+                            <tr>
+                                <th><input type="checkbox"></th>
+                                <td>ユーザー4</td>
+                                <td>ユーザー4 楓</td>
+                                <td>user4@example.com</td>
+                                <td>購読者</td>
+                                <td>15</td>
+                                <td>7</td>
+                                <td>2021/01/01 12:00:00</td>
+                            </tr>
+                            <tr>
+                                <th><input type="checkbox"></th>
+                                <td>ユーザー4</td>
+                                <td>ユーザー4 楓</td>
+                                <td>user4@example.com</td>
+                                <td>購読者</td>
+                                <td>15</td>
+                                <td>7</td>
+                                <td>2021/01/01 12:00:00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="pagination">
+                    <form>
+                        <select>
+                            <option value="10">一括操作</option>
+                        </select>
+                        <button>連用</button>
+                        <select>
+                            <option value="10">権限グループを変更</option>
+                        </select>
+                        <button>変更</button>
+                    </form>
+
+                </div>
+            </div>
+
+            <!-- 新增用户 -->
+            <div id="new-user" class="content-item">
+                <h2>新規ユーザーを追加</h2>
+                <p>このサイトに追加する新規ユーザーを作成します。</p>
+                <form class="user-form" method="post" action="#">
+                    <div class="form-group">
+                        <label for="username">ユーザー名（必須）</label>
+                        <input type="text" id="username" name="username" required><br>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">メールアドレス（必須）</label>
+                    <input type="email" id="email" name="email" required><br>
+                    </div>
+                    <div class="form-group"> 
+                        <label for="first-name">名</label>
+                        <input type="text" id="first-name" name="first-name"><br>
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name">姓</label>
+                        <input type="text" id="last-name" name="last-name"><br>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">ウェブサイト</label>
+                        <input type="url" id="website" name="website"><br>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">パスワード</label>
+                        <input id="password" name="password" value="パスワードを表示" required><br>
+                    </div>
+                    <div class="form-group">
+                        <label for="mail-notification">メール通知</label>
+                        <input type="checkbox" id="mail-notification" name="mail-notification">新規ユーザーにアカウントに関するメールを送信<br>
+                    </div>
+                    <div class="form-group">
+                        <label for="authgroup" class="authgroup-label">権限グループ</label>
+                        <select id="authgroup" name="authgroup">
+                            <option value="administrator">物件管理者</option>
+                            <option value="editor">購読者</option>
+                        </select><br>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">新規ユーザーを追加</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- 个人资料 -->
+            <div id="your-profile" class="content-item">
+                <h2 style="font-size: 20px;">公開情報</h2>
+                <h3 style="font-size: 15px;">管理会社情報</h3>
+                <div class="company-info">
+                    <form>
+                        <label for="store-image">店铺画像</label>
+                        <input type="file" id="store-image" name="store-image"><br>
+                        <label for="comment">コメント</label>
+                        <textarea id="comment" name="comment" rows="3" cols="50"></textarea><br>
+                        <label for="title">タイトル</label>
+                        <input type="text" id="title" name="title" value="サンブル不動産"> 例：サンブル不動産<br>
+                        <label for="company-name">会社名</label>
+                        <input type="text" id="company-name" name="company-name" value="サンブル不動産"><br>
+                        <label for="company-address">住所</label>
+                        <input type="text" id="company-address" name="company-address" value="東京都千代田区一ツ橋1-1-1"><br>
+                        <label for="company-tel">電話番号</label>
+                        <input type="tel" id="company-tel" name="company-tel" value="03-1234-5678"> 例：03-1234-5678<br>
+                        <label for="company-fax">FAX番号</label>
+                        <input type="tel" id="company-fax" name="company-fax" value="03-9999-9999"> 例：XXX-XXX-XXXX<br>
+                        <label for="company-url">URL</label>
+                        <input type="url" id="company-url" name="company-url" value="https://www.sannburu.co.jp/"> 例：https://www.sannburu.co.jp/<br>
+                        <label for="company-email">MAIL</label>
+                        <input type="email" id="company-email" name="company-email" value="info@sannburu.co.jp"> 例：info@sannburu.co.jp<br>
+                        <label for="service-time">営業時間</label>
+                        <input type="text" id="service-time" name="service-time" value="月曜日～金曜日 9:00～18:00"> 例：月曜日～金曜日 9:00～18:00<br>
+                        <label for="off-service-time">休日</label>
+                        <input type="text" id="off-service-time" name="off-service-time" value="土曜日、日曜日"> 例：土曜日、日曜日<br>
+                        <label for="license-number" class="license-label">免许番号</label>
+                        <input type="text" id="license-number" name="license-number" value="1234567890"> 例：1234567890<br>
+                        <label for="company-owner" class="owner-label">担当者</label>
+                        <input type="text" id="company-owner" name="company-owner"><br>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
