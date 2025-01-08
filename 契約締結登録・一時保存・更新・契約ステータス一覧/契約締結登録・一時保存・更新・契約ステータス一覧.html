@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>契約締結登録・一時保存・更新・契約ステータス一覧</title>
+    <link rel="stylesheet" href="styles.css">
+</head> 
+<body>
+    <div class="container">
+    <!-- 最上方标题 -->
+        <header class="header">
+            <h2 class="title">調達案件情報設定</h2>
+        </header>
+
+    <!-- 中间内容区域 -->
+        <main class="content">
+            <table class="contentTable">
+                <tr>
+                    <th>契約年度<span class="requiredField">必須</span></th>
+                    <td>
+                        <input type="text" class="contractYear">  令和06年度 ~ <input type="text" class="contractYear"><br>
+                        <span>単年度の場合は開始年度のみ入力し、複数年度（国債）の場合は終了年度まで入力してください。</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th>工事又は業務名<span class="requiredField">必須</span></th>
+                    <td>
+                        <textarea rows="1" cols="50"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <th>工事又は業務名種别<span class="requiredField">必須</span></th>
+                    <td>
+                        <select id="workType">
+                            <option>工事</option>
+                            <option>業務</option>
+                        </select>
+                        <select id="workSubType">
+                            <option>一般土木(港湾空港·北海道開発局以外)</option>
+                            <option>アスつアルト舗装(港湾空港·北海道開発局以外)</option>
+                            <option>鋼橋上部(港湾空港·北海道開発局以外)</option>
+                            <option>造園(港湾空港·北海道開発局以外)</option>
+                            <option>建築(港湾空港·北海道開発局以外)</option>
+                            <option>木造建築(港湾空港·北海道開発局以外)</option>
+                            <option>電気設備(港湾空港·北海道開発局以外)</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>契約金额の確定単位<span class="requiredField">必須</span></th>
+                    <td>
+                        <input type="radio" checked>総価契約
+                        <input type="radio">単価契約
+                    </td>
+                </tr>
+                <tr>
+                    <th>案件概要</th>
+                    <td>
+                        <textarea rows="5" cols="50"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <th>工事又は履行場所<span class="requiredField">必須</span></th>
+                    <td>
+                        <input type="text" id="workLocation">
+                    </td>
+                </tr>
+                <tr>
+                    <th>工事又は履行期間（自）<span class="requiredField">必須</span></th>
+                    <td>
+                        <input type="radio" checked>契約缔結日の翌日
+                        <input type="radio">期日指定
+                        <input type="date">
+                    </td>
+                </tr>
+                <tr>
+                    <th>工事又は履行期間（至）<span class="requiredField">必須</span></th>
+                    <td>
+                        <input type="date">
+                    </td>
+                </tr>
+                <tr>
+                    <th>契約方式<span class="requiredField">必須</span></th>
+                    <td>
+                        <input type="radio" checked>一股競争入札
+                        <input type="radio">指名競争入札
+                        <input type="radio">随意契約
+                    </td>
+                </tr>
+                <tr>
+                    <th>適用条项</th>
+                    <td>
+                        <textarea rows="5" cols="50"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <th>契約金额（税込み）<span class="requiredField">必須</span></th>
+                    <td>
+                        <input type="text"> 円
+                    </td>
+                </tr>
+                <tr>
+                    <th>取消営税及び地方消費税の額）<span class="requiredField">必須</span></th>
+                    <td>
+                        <input type="text"> 円 消費税率
+                        <select>
+                            <option></option>
+                        </select>
+                        <button id="calculateTax">税額計算</button>
+                    </td>
+                </tr>
+                <tr>
+                    <th>支払条件<span class="requiredField">必須</span></th>
+                    <td>
+                        <select id="paymentCondition">
+                            <option></option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>部分払回数</th>
+                    <td>
+                        <input type="text"> 回
+                    </td>
+                </tr>
+                <tr>
+                    <th>特記事項</th>
+                    <td>
+                        <textarea rows="5" cols="50"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <th>検索キーワード</th>
+                    <td>
+                        <input type="text" id="searchKeyword">
+                    </td>
+                </tr>
+            </table>
+        </main>
+    
+    <!-- 最下方按钮区域 -->
+        <footer class="footer">
+            <button>戻る</button>
+            <button>設定</button>
+        </footer>
+
+</body>
+</html>
