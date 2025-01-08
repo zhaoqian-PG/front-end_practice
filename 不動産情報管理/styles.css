@@ -86,7 +86,6 @@ body {
     display: block;
 }
 
-.user-form {
     margin-top: 20px;
 }
 
@@ -118,7 +117,7 @@ body {
 
 .user-form button:hover {
     background-color: rgb(35, 106, 163);
-}
+} */
 
 #user-list {
     margin-top: 20px;
@@ -148,7 +147,7 @@ body {
     text-align: center;
 }
 
-.company-info {
+/* .company-info {
     margin-left: 200px;
     margin-top: -5px;
 }
@@ -166,4 +165,4 @@ body {
     border-radius: 3px;
     font-size: 15px;
     margin-bottom: 20px;
-}
+} */

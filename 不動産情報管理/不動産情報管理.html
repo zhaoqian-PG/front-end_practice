@@ -175,7 +175,62 @@
             <div id="new-user" class="content-item">
                 <h2>新規ユーザーを追加</h2>
                 <p>このサイトに追加する新規ユーザーを作成します。</p>
-                <form class="user-form" method="post" action="#">
+                <table class="newUserTable">
+                    <tr>
+                        <th>ユーザー名（必須）</th>
+                        <td>
+                            <input type="text" id="username" name="username" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>メールアドレス（必須）</th>
+                        <td>
+                            <input type="email" id="email" name="email" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>名</th>
+                        <td>
+                            <input type="text" id="first-name" name="first-name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>姓</th>
+                        <td>
+                            <input type="text" id="last-name" name="last-name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>ウェブサイト</th>
+                        <td>
+                            <input type="url" id="website" name="website">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>パスワード</th>
+                        <td>
+                            <input id="password" name="password" value="パスワードを表示" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>メール通知</th>
+                        <td>
+                            <input type="checkbox" id="mail-notification" name="mail-notification">
+                            <span id="checkboxText">新規ユーザーにアカウントに関するメールを送信</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>権限グループ</th>
+                        <td>
+                            <select id="authgroup" name="authgroup">
+                                <option value="administrator">物件管理者</option>
+                                <option value="editor">購読者</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+                <button type="submit" id="newUserButton">新規ユーザーを追加</button>
+                <!-- <form class="user-form" method="post" action="#">
                     <div class="form-group">
                         <label for="username">ユーザー名（必須）</label>
                         <input type="text" id="username" name="username" required><br>
@@ -214,15 +269,104 @@
                     <div class="form-group">
                         <button type="submit">新規ユーザーを追加</button>
                     </div>
-                </form>
+                </form> -->
             </div>
 
             <!-- 个人资料 -->
             <div id="your-profile" class="content-item">
                 <h2 style="font-size: 20px;">公開情報</h2>
-                <h3 style="font-size: 15px;">管理会社情報</h3>
+                <h3 style="font-size: 18px;">管理会社情報</h3>
+                <img src="./images/公司.png" alt="logo">
                 <div class="company-info">
-                    <form>
+                    <table class="companyInfoTable">
+                        <tr>
+                            <th>店铺画像</th>
+                            <td>
+                                <input type="text" id="store-image" name="store-image" value="2.2png">
+                                <span id="storeImageText">画像を設定</span>
+                            </td>
+                        <tr>
+                            <th>コメント</th>
+                            <td>
+                                <textarea id="comment" name="comment" rows="3" cols="50"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>タイトル</th>
+                            <td>
+                                <input type="text" id="title" name="title" value="取り扱い不動産会社"> 
+                                例：取り扱い不動産会社
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>会社名</th>
+                            <td>
+                                <input type="text" id="company-name" name="company-name" value="OO不動産">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>住所</th>
+                            <td>
+                                <input type="text" id="company-address" name="company-address" value="東京都XXXXXXXXXXX">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>電話番号</th>
+                            <td>
+                                <input type="tel" id="company-tel" name="company-tel" value="XXX-XXX-XXXX"> 
+                                例: XXX-XXX-XXXX
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>FAX番号</th>
+                            <td>
+                                <input type="tel" id="company-fax" name="company-fax" value="XXX-XXX-XXXX"> 
+                                例: XXX-XXX-XXXX
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>URL</th>
+                            <td>
+                                <input type="url" id="company-url" name="company-url" value="http://OOO.com/"> 
+                                例: http://OOO.com/
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>MAIL</th>
+                            <td>
+                                <input type="email" id="company-email" name="company-email" value="OOO@OOO.com"> 
+                                例: OOO@OOO.com
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>営業時間</th>
+                            <td>
+                                <input type="text" id="service-time" name="service-time" value="10:00 ~ 20:00"> 
+                                例: 10:00 ~ 20:00
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>休日</th>
+                            <td>
+                                <input type="text" id="off-service-time" name="off-service-time" value="毎週水曜日"> 
+                                例: 毎週水曜日
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>免许番号</th>
+                            <td>
+                                <input type="text" id="license-number" name="license-number" value="OOO知事 (X)第XXXX号"> 
+                                例: OOO知事 (X)第XXXX号
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>担当者</th>
+                            <td>
+                                <input type="text" id="company-owner" name="company-owner">
+                            </td>
+                        </tr>
+                    </table>
+                    <!-- <form>
                         <label for="store-image">店铺画像</label>
                         <input type="file" id="store-image" name="store-image"><br>
                         <label for="comment">コメント</label>
@@ -249,7 +393,7 @@
                         <input type="text" id="license-number" name="license-number" value="1234567890"> 例：1234567890<br>
                         <label for="company-owner" class="owner-label">担当者</label>
                         <input type="text" id="company-owner" name="company-owner"><br>
-                    </form>
+                    </form> -->
                 </div>
             </div>
         </div>
