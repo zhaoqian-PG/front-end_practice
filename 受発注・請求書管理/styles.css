@@ -1,0 +1,138 @@
+.content {
+    width: 100%;
+    min-height: 450px;
+    border: 1px solid lightgrey;
+}
+
+.bottom {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.bottom button {
+    background-color: rgb(66, 74, 137);
+    color: #fff;
+    margin-right: 15px;
+    width: 60px;
+}
+
+/* 最上方表格区域的样式 */
+
+.managerInfo {
+    margin: 10px 10px;
+}
+
+.tableTitle {
+    display: inline-block; /* 将担当者情報标题设置为内联块级元素 */
+    width: 360px;
+    padding: 3px 4px;
+    background-color: rgb(66, 74, 137);
+    border: 1px solid rgb(162, 162, 243);
+    color: #fff;
+    text-align: left;
+}
+
+.managerInfo button {
+    background-color: rgb(66, 74, 137);
+    color: #fff;
+    margin-left: 5px;
+    margin-bottom: 2px;
+}
+
+.managerInfoTable {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse; 
+}
+
+.managerInfoTable th, td {
+    border: 1px solid lightgray;
+
+}
+
+.managerInfoTable th {
+    background-color: rgb(66, 74, 137);
+    color: #fff;
+    font-weight: lighter;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.managerInfoBottom {
+    display: inline-block;
+    width: 150px;
+    margin-top: 10px;
+    border: 1px solid lightgray;
+    background-color: grey;
+    text-align: center;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.requiredField {
+    margin-left: 20px;
+    background-color: red;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: #fff;
+    font-weight: lighter;
+}
+
+/* 中间表格区域的样式 */
+.managerAdd {
+    margin: 10px 10px;
+}
+
+.managerAddTable {
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse; 
+}
+
+.managerAddTable th, td {
+    border: 1px solid lightgray;
+}
+
+.managerAddTable th {
+    background-color: rgb(66, 74, 137);
+    color: #fff;
+    font-weight: lighter;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 3px;
+    width: 364px;
+}
+
+.managerAddTable select {
+    margin-left: 5px;
+}
+
+.checkboxText {
+    font-size: smaller;
+    margin-left: 4px;
+}
+
+#contractsOfficerGroup, #organization {
+    width: 200px;
+}
+
+#subOrganization {
+    width: 350px;
+}
+
+#government, #position {
+    width: 500px;
+}
+
+.managerAdd button {
+    background-color: rgb(66, 74, 137);
+    color: #fff;
+    margin-bottom: 2px;
+    margin-top: 8px;
+    margin-right: 8px;
+}
+
+/* 最下方表格区域的样式 */
+.managerOfficerTable {
+    margin: 10px 10px;
+}

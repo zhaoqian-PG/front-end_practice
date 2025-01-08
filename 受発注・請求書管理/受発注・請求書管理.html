@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>発注者情報設定</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- 标题 -->
+    <h2 class="title">発注者情報設定</h2>
+
+<!-- 内容区域 -->
+    <div class="content">
+    <!-- 担当者情報 -->
+        <div class="managerInfo">
+            <span class="tableTitle">担当者情報</span>
+            <button>行追加</button>
+            <button>テンプレート設定</button>
+            <button>テンプレート保存</button>
+            <table class="managerInfoTable">
+                <thead>
+                    <th>項番</th>
+                    <th>選択</th>
+                    <th>発注者区分<span class="requiredField">必須</span></th>
+                    <th>ユニバーサルID</th>
+                    <th>組織</th>
+                    <th>氏名</th>
+                    <th>電話番号</th>
+                    <th>メール送信先<span class="requiredField">必須</span></th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td></td>
+                        <td>
+                            <select>
+                                <option>契約担当</option>
+                            </select>
+                        </td>
+                        <td>S10005512</td>
+                        <td>国土交通省 北陸地方整備局</td>
+                        <td>国土交通省 北陸地方整備局 G22_03</td>
+                        <td></td>
+                        <td>
+                            <select>
+                                <option>送付する</option>
+                            </select>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <span class="managerInfoBottom">
+                行削除（発注者）
+            </span>
+        </div>
+
+    <!-- 担当官追加 -->
+        <div class="managerAdd">
+            <span class="tableTitle">担当官追加</span>
+            <table class="managerAddTable">
+                <tr>
+                    <th>契約担当官等<span class="requiredField">必須</span></th>
+                    <td>
+                        <select id="contractsOfficerGroup" name="identityGroup">
+                            <option value="expenditureDirector">支出負担担当官</option>
+                            <option value="subExpenditureDirector">分任支出負担担当官</option>
+                            <option value="contractsOfficer">契約担当官</option>
+                            <option value="subContractsOfficer">分任契約担当官</option>
+                            <option value="governmentExpenditureOfficer">官署支出官</option>
+                        </select>
+                        <input type="checkbox" id="inChargeOrNot" name="inChargeOrNot"><span class="checkboxText">代表</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th>組織<span class="requiredField">必須</span></th>
+                    <td>
+                        <select id="organization" name="organization">
+                            <option value="OkinawaGeneralBureau">内閣府 沖縄総合事務局</option>
+                            <option value="artsScienceMinistry">文部科学省</option>
+                            <option value="agricultureMinistry">農林水産省</option>
+                            <option value="forestryMinistry">林野厅</option>
+                            <option value="fisheriesMinistr">水産厅</option>
+                            <option value="environmentMinistry">国土交通省</option>
+                            <option value="defenceMinistry">防衛省</option>
+                        </select>
+                        <select id="subOrganization" name="subOrganization">
+                            <option value="OkinawaGeneralBureau">内閣府 沖縄総合事務局</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>官署<span class="requiredField">必須</span></th>
+                    <td>
+                        <select id="government" name="government">
+                            <option value="generalAffairsDept">沖縄総合事務局総務部</option>
+                            <option value="deptAndConstructDept">沖縄総合事務局開発建設部</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>官職<span class="requiredField">必須</span></th>
+                    <td>
+                        <select id="position" name="position">
+                            <option value="generalAffairsDeptHead">沖縄総合事務局総務部長</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+            <button>追加（担当官）</button>
+            <button>テンプレート設定</button>
+            <button>テンプレート保存</button>
+        </div>
+
+    <!-- 担当官情報 -->
+        <div class="managerOfficerTable">
+            <span class="tableTitle">担当官情報</span>
+            <table class="managerInfoTable">
+                <thead>
+                    <th>項番</th>
+                    <th>選択</th>
+                    <th>契約担当官等</th>
+                    <th>組織</th>
+                    <th>官署</th>
+                    <th>官職</th>
+                    <th>官職（備考）</th>
+                </thead>
+            </table>
+            <span class="managerInfoBottom">
+                行削除（担当官）
+            </span>
+        </div>
+    </div>
+
+<!-- 最下方按钮区域 -->
+    <div class="bottom">
+        <button>戻る</button>
+        <button>設定</button>
+    </div>
+
+</body>
+</html>
