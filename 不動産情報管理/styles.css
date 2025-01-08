@@ -86,6 +86,83 @@ body {
     display: block;
 }
 
+/* 新增用户模块的表格样式 */
+.newUserTable {
+    width: 100%;
+    min-height: 350px;
+    margin-top: 20px;
+}
+
+.newUserTable th {
+    text-align: left;
+}
+
+.newUserTable input {
+    margin-left: 80px;
+    width: 400px;
+    height: 20px;
+    border: 1px solid rgb(202, 199, 199);
+}
+
+.newUserTable #password {
+    width: 110px;
+}
+
+.newUserTable #mail-notification {
+    margin-left: -110px;
+    height: 15px;
+}
+
+.newUserTable #checkboxText {
+    margin-left: -190px;
+}
+
+.newUserTable #authgroup {
+    margin-left: 80px;
+}
+
+#newUserButton {
+    margin-top: 20px;
+    background-color: rgb(50, 131, 192);
+    color: #fff;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 3px;
+    font-size: 15px;
+}
+
+/* 公司信息管理部分的表格样式 */
+
+.company-info {
+    margin-left: 200px;
+    margin-top: -165px;
+    font-size: 14px;
+}
+
+.companyInfoTable th{
+    text-align: left;
+}
+
+.companyInfoTable input {
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 200px;
+    height: 15px;
+}
+
+.companyInfoTable #comment {
+    width: 400px;
+    margin-left: 30px;
+}
+
+#storeImageText {
+    margin-left: 10px;
+    border: 1px solid black;
+    padding: 2px 3px;
+}
+
+/* .user-form {
     margin-top: 20px;
 }
 
